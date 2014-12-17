@@ -1,0 +1,112 @@
+<!DOCTYPE html5>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Vaisand"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+    <meta name="keywords" content="vaisand"/>
+    <meta name="author" content="Vaisand"/>
+    <title>Vaisand</title>
+
+    <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body class="landing">
+
+<header>
+    <figure class="main-logo">
+        <img src="img/logo.png"/>
+    </figure>
+
+    <div class="social">
+        <div class="container">
+            <img src="img/facebook.png" />
+            <img src="img/twitter.png" />
+            <img src="img/instagram.png" />
+        </div>
+    </div>
+</header>
+
+<div class="slider">
+    <figure class="barra">
+        <img src="img/barra.png" />
+    </figure>
+    <figure class="main-slider">
+        <img src="img/slider.png" />
+    </figure>
+</div>
+
+<div class="suscripcion">
+    <div class="container">
+        <h3>
+            Suscribete y recibe nuestras novedades...
+        </h3>
+        <form action="suscripcion.php">
+            <input type="email" name="email" placeholder="Email" required="required">
+            <input type="submit" value="Suscribirse">
+        </form>
+    </div>
+</div>
+
+<div class="ubicacion">
+    <div class="container">
+        <div class="mapa col-sm-6" id="mapholder">
+
+        </div>
+
+        <div class="texto col-sm-6">
+            <h2>UBICACIÓN</h2>
+            <p>Av. Pedro de Heredia sector Lo Amador no.19-142.</p>
+            <p>Local 2</p>
+            <p>Cartagena - Colombia</p>
+            <br>
+            <P>Cr 46 # 43 - 53</P>
+            <p>Barranquilla - Colombia</p>
+        </div>
+    </div>
+</div>
+
+<div class="contacto">
+    <div class="container">
+        <div class="texto col-sm-4">
+            <h2>CONTÁCTANOS</h2>
+            <span>Teléfonos:</span>
+            <p>(5) 643 1510</p>
+            <p>314 776 1814</p>
+            <p>321 567 2487</p>
+            <p>313 430 4931</p>
+            <br>
+            <span>E-Mail:</span>
+            <p>ventas@vaisand.com</p>
+            <ul class="contact-social">
+                <li class="facebook">Vaisand Motors</li>
+                <li class="twitter">@vaisandmotors</li>
+                <li class="instagram">@vaisandmotors</li>
+            </ul>
+        </div>
+
+        <form class="col-sm-8" action="contacto.php">
+            <input type="text" name="name" placeholder="Nombre y Apellido" required="required">
+            <input type="email" name="email" placeholder="Email" required="required">
+            <input type="text" name="ciudad" placeholder="Ciudad" required="required">
+            <input type="tel" name="telefono" placeholder="Teléfono">
+            <textarea name="mensaje" rows="10" cols="30" placeholder="Mensaje" required="required"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</div>
+
+<footer>
+
+</footer>
+
+<script src="js/script.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script>showPosition();</script>
+
+</body>
+
+</html>
