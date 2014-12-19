@@ -14,7 +14,10 @@ figure.main-logo img {
 div.social {
   background-color: #c6c6c6;
   padding-top: 15px;
-  padding-botton: 15px;
+  padding-bottom: 15px;
+}
+div.social img {
+  width: 4em;
 }
 div.suscripcion {
   background-color: #00f;
@@ -22,6 +25,7 @@ div.suscripcion {
   border-bottom: 12px solid #1d71b8;
   padding-top: 3em;
   padding-bottom: 3em;
+  background: url("img/bckgroundbanner.jpg") no-repeat -5px -5px;
 }
 div.suscripcion h3 {
   color: #fff;
@@ -38,11 +42,16 @@ div.suscripcion form input {
   font-weight: bold;
   font-style: italic;
   color: #878787;
+  margin-right: 2em;
+  margin-left: 2em;
 }
 div.suscripcion form input[type=submit] {
   background-color: #1d71b8;
   color: #fff;
   width: 20%;
+}
+div#suscripcion-message {
+  color: #fff;
 }
 div.slider {
   position: relative;
@@ -57,9 +66,13 @@ div.slider figure.main-slider img {
 }
 div.ubicacion {
   padding-top: 4em;
+  padding-bottom: 6em;
+  border-bottom: 2px solid #969695;
+  box-shadow: 0px 3px 10px #969695;
 }
 div.ubicacion div.mapa {
   height: 500px;
+  border: 5px solid #1d71b8;
 }
 div.ubicacion div.texto {
   padding-left: 3em;
@@ -82,6 +95,7 @@ div.contacto div.texto h2 {
   font-size: 2.2em;
   font-weight: bold;
   font-style: italic;
+  margin-bottom: 1em;
 }
 div.contacto div.texto p {
   font-size: 1.2em;
@@ -90,8 +104,29 @@ div.contacto div.texto span {
   color: #1a3c6e;
   font-weight: bold;
 }
-div.contacto div.texto ul li.facebook {
-  list-style-image: url("img/facebook.png");
+div.contacto div.texto ul {
+  padding-left: 0;
+}
+div.contacto div.texto ul li {
+  list-style: none;
+}
+div.contacto div.texto ul li:before {
+  content: '';
+  display: inline-block;
+  height: 1.5em;
+  width: 1em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 2em;
+}
+div.contacto div.texto ul li.facebook:before {
+  background-image: url("img/facebook_azul.png");
+}
+div.contacto div.texto ul li.twitter:before {
+  background-image: url("img/twitter_azul.png");
+}
+div.contacto div.texto ul li.instagram:before {
+  background-image: url("img/instagram_azul.png");
 }
 div.contacto form {
   padding-top: 40px;
@@ -99,6 +134,11 @@ div.contacto form {
 div.contacto form input {
   width: 45%;
   float: left;
+  border: 2px solid #1d71b8;
+  margin-top: 1em;
+  font-size: 1.3em;
+  font-style: italic;
+  padding: 5px 10px;
 }
 div.contacto form input:nth-child(even) {
   margin-left: 10%;
@@ -106,7 +146,24 @@ div.contacto form input:nth-child(even) {
 div.contacto form input[type=submit] {
   width: 5em;
   margin-left: 0;
+  padding: 5px;
+  border: none;
+  background-color: #1d71b8;
+  color: #fff;
+  margin-bottom: 10px;
 }
 div.contacto form textarea {
   width: 100%;
+  border: 2px solid #1d71b8;
+  margin-top: 1em;
+  font-size: 1.3em;
+  font-style: italic;
+  padding: 5px 10px;
+}
+div#contact-message {
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid #1d71b8;
+  padding: 5px 10px;
+  display: none;
 }
