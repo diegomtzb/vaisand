@@ -10,7 +10,11 @@
 
     <link rel="stylesheet" href="normalize.css"/>
     <link rel="stylesheet" href="css/bootstrap.css"/>
+
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="style.css"/>
 
 
@@ -36,22 +40,43 @@
         <img src="img/logo.png"/>
     </figure>
 
-    <div class="social">
-        <div class="container">
-            <a href= "https://www.facebook.com/vaisand.motos" target= "_blank"><img src="img/facebook.png" /></a>
-            <a href= "https://twitter.com/vaisandmotors" target= "_blank" ><img src="img/twitter.png" /></a>
-            <a href= "http://instagram.com/vaisandmotors" target= "_blank"><img src="img/instagram.png" /></a>
-        </div>
-    </div>
 </header>
+
+<div class="container posrelative">
+    <div class="social">
+        <a href= "https://www.facebook.com/vaisand.motos" target= "_blank"><img src="img/facebook.png" /></a>
+        <a href= "https://twitter.com/vaisandmotors" target= "_blank" ><img src="img/twitter.png" /></a>
+        <a href= "http://instagram.com/vaisandmotors" target= "_blank"><img src="img/instagram.png" /></a>
+    </div>
+</div>
 
 <div class="slider">
     <!--<figure class="barra">
         <img src="img/barra.png" />
     </figure>-->
+    <a class="slider-control slider-control-left" onclick="slide_left()" ></a>
     <figure class="main-slider">
-        <img src="img/landing-page-img1.jpg" />
+        <img  src="img/landing-page-img1.jpg" />
+        <figure class="label label01">
+            <img src="img/referencia.png" />
+            <h2>VS-03A</h2>
+        </figure>
+        <figure class="label label02">
+            <img src="img/referencia.png" />
+            <h2>VS-01A</h2>
+        </figure>
+        <figure class="label label03">
+            <img src="img/referencia.png" />
+            <h2>VS-02A</h2>
+        </figure>
+
+
+        <img src="img/landing-page-img2.jpg" />
+
+        <img src="img/landing-page-img3.jpg" />
+
     </figure>
+    <a class="slider-control slider-control-right"  onclick="slide_right()"></a>
 </div>
 
 <div class="suscripcion">
@@ -69,18 +94,18 @@
 
 <div class="ubicacion">
     <div class="container">
-        <div class="mapa col-sm-6" id="mapholder">
-
-        </div>
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+        <div class="mapa col-sm-6" id="mapholder"></div>
 
         <div class="texto col-sm-6">
             <h2>UBICACIÓN</h2>
-            <p>Av. Pedro de Heredia sector Lo Amador no.19-142.</p>
-            <p>Local 2</p>
-            <p>Cartagena - Colombia</p>
+            <p>Av. Pedro de Heredia sector Lo Amador no.19-142. Local 2</p>
+            <p><span>Cartagena - Colombia</span></p>
             <br>
             <P>Cr 46 # 43 - 53</P>
-            <p>Barranquilla - Colombia</p>
+            <p><span>Barranquilla - Colombia</span></p>
         </div>
     </div>
 </div>
@@ -90,10 +115,10 @@
         <div class="texto col-sm-4">
             <h2>CONTÁCTANOS</h2>
             <span>Teléfonos:</span>
-            <p>(5) 643 1510</p>
-            <p>314 776 1814</p>
-            <p>321 567 2487</p>
-            <p>313 430 4931</p>
+            <p class="bold">(5) 643 1510</p>
+            <p class="bold">314 776 1814</p>
+            <p class="bold">321 567 2487</p>
+            <p class="bold">313 430 4931</p>
             <br>
             <span>E-Mail:</span>
             <p>ventas@vaisand.com</p>
