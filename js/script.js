@@ -1,3 +1,4 @@
+//Mostrar mapa
 function showPosition() {
     lat = "10.422026";
     lon = "-75.533604";
@@ -16,6 +17,7 @@ function showPosition() {
     var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
     var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
 }
+
 
 // Set up an event listener for the suscription form.
 $( "#suscripcion" ).submit(function( event ) {
@@ -42,13 +44,29 @@ $( "#contact-form" ).submit(function( event ) {
 
     event.preventDefault();
 
+    var this_name = $( "#contact-form input[name='name']");
+    var this_email = $( "#contact-form input[name='email']");
+    var this_ciudad = $( "#contact-form input[name='ciudad']");
+    var this_telefono = $( "#contact-form input[name='telefono']");
+    var this_mensaje = $( "#contact-form textarea[name='mensaje']");
+    var this_enviar = $( "#contact-form input[name='enviar']");
+
+
     var dataString = {
-        "name" : $( "#contact-form input[name='name']").val(),
-        "email" : $( "#contact-form input[name='email']").val(),
-        "ciudad" : $( "#contact-form input[name='ciudad']").val(),
-        "telefono" : $( "#contact-form input[name='telefono']").val(),
-        "mensaje" : $( "#contact-form textarea[name='mensaje']").val()
+        "name" : this_name.val(),
+        "email" : this_email.val(),
+        "ciudad" : this_ciudad.val(),
+        "telefono" : this_telefono.val(),
+        "mensaje" : this_mensaje.val()
     };
+
+    this_name.val("");
+    this_email.val("");
+    this_ciudad.val("");
+    this_telefono.val("");
+    this_mensaje.val("");
+    this_enviar.attr('disabled', 'disabled');
+
 
     $.ajax({
         type: "POST",
@@ -58,6 +76,7 @@ $( "#contact-form" ).submit(function( event ) {
         success: function(html){
             $("#contact-message").css("display", "block");
             $("#contact-message").html(html);
+            this_enviar.removeAttr('disabled');
         }
     });
 });

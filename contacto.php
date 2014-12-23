@@ -2,8 +2,9 @@
 if(isset($_POST['email'])) {
 
     // CHANGE THE TWO LINES BELOW
-    $email_to = "diegomtzb@hotmail.com";
+    $email_to = "ventas@caribbean-trade.com";
     $email_to_cco = "diegomtzb@hotmail.com";
+    $email_from = "webpage@vaisand.com";
 
     $email_subject = utf8_decode ("Mensaje Página Web Vaisand");
 
@@ -71,13 +72,13 @@ if(isset($_POST['email'])) {
 
     $email_message .= "Nombre: ".clean_string($name)."\n";
     $email_message .= "Correo Electrónico: ".clean_string($email)."\n";
-    $email_message .= "Ciudad: ".clean_string($email)."\n";
+    $email_message .= "Ciudad: ".clean_string($ciudad)."\n";
     $email_message .= "Teléfono: ".clean_string($telefono)."\n";
     $email_message .= "Comentario: ". "\n" .clean_string($message)."\n";
 
 
 // create email headers
-    $headers = 'From: '.$email."\r\n";
+    $headers = 'From: '.$email_from."\r\n";
     $headers .= 'Bcc: ' . $email_to_cco . "\r\n".
         'Reply-To: '.$email."\r\n" .
         'MIME-Version: 1.0'."\r\n" .

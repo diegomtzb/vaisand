@@ -9,7 +9,11 @@
     <title>Vaisand</title>
 
     <link rel="stylesheet" href="normalize.css"/>
-    <link rel="stylesheet" href="css/bootstrap.css"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
 
@@ -82,7 +86,7 @@
 <div class="suscripcion">
     <div class="container">
         <h3>
-            Suscribete y recibe nuestras novedades...
+            Suscribete y recibe nuestras novedades
         </h3>
         <form id="suscripcion" action="suscripcion.php" method="POST">
             <input type="email" name="email" placeholder="Email" required="required">
@@ -121,7 +125,7 @@
             <p class="bold">313 430 4931</p>
             <br>
             <span>E-Mail:</span>
-            <p>ventas@vaisand.com</p>
+            <p>ventas@caribbean-trade.com</p>
             <ul class="contact-social">
                 <li class="facebook">Vaisand Motors</li>
                 <li class="twitter">@vaisandmotors</li>
@@ -135,7 +139,7 @@
             <input type="text" name="ciudad" placeholder="Ciudad" required="required">
             <input type="tel" name="telefono" placeholder="Teléfono">
             <textarea name="mensaje" rows="10" cols="30" placeholder="Mensaje" required="required"></textarea>
-            <input type="submit" value="Enviar">
+            <input type="submit" name="enviar" value="Enviar"><!--Ajax desde js $( "#contact-form" ).submit(function( event )-->
             <div id="contact-message"></div>
         </form>
 
@@ -146,7 +150,6 @@
 
 </footer>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="js/script.js"></script>
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script>showPosition();</script>
