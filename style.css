@@ -71,67 +71,68 @@ div.slider {
   margin: auto;
   overflow: hidden;
 }
-div.slider a.slider-control {
-  position: absolute;
-  top: calc(50% - 45px);
-  z-index: 1;
-  width: 50px;
-  height: 85px;
-  display: block;
+.carousel-control {
+  width: 5%;
+  height: 13%;
+  top: 40%;
 }
-div.slider a.slider-control-left {
+.carousel-control.left {
   background: transparent url("img/Flecha_izq.png") center no-repeat;
-  left: 0;
-  background-size: 90px 90px;
+  background-size: 100% 100%;
 }
-div.slider a.slider-control-right {
+.carousel-control.right {
   background: transparent url("img/Flecha_der.png") center no-repeat;
-  right: 0;
-  background-size: 90px 90px;
+  background-size: 100% 100%;
 }
-div.slider a.slider-control-left:hover {
-  cursor: pointer;
-  background-image: url("img/Flecha_izq2.png");
-}
-div.slider a.slider-control-right:hover {
-  cursor: pointer;
-  background-image: url("img/Flecha_der2.png");
-}
-div.slider figure.barra {
-  position: absolute;
-  right: 135px;
-  top: -45px;
-}
-div.slider figure.main-slider {
+div.slider div.main-slider {
   position: relative;
   left: 0%;
-  width: 300%;
   margin: 0;
   padding: 0;
   font-size: 0;
   text-align: left;
   display: inline-block;
 }
-div.slider figure.main-slider figure.label {
+div.slider div.main-slider figure.label {
   position: absolute;
-  max-width: 5%;
+  max-width: 14%;
 }
-div.slider figure.main-slider figure.label01 {
-  left: 1%;
-  top: 75%;
+div.slider div.main-slider figure.label01 {
+  left: 6%;
+  top: 73%;
 }
-div.slider figure.main-slider figure.label02 {
-  left: 14%;
+div.slider div.main-slider figure.label02 {
+  left: 42%;
+  top: 82%;
+}
+div.slider div.main-slider figure.label03 {
+  left: 76%;
   top: 80%;
 }
-div.slider figure.main-slider figure.label03 {
-  left: 26%;
+div.slider div.main-slider figure.label04 {
+  left: 6%;
+  top: 77%;
+}
+div.slider div.main-slider figure.label05 {
+  left: 44%;
+  top: 83%;
+}
+div.slider div.main-slider figure.label06 {
+  left: 79%;
+  top: 79%;
+}
+div.slider div.main-slider figure.label07 {
+  left: 13%;
   top: 80%;
 }
-div.slider figure.main-slider figure.label img {
+div.slider div.main-slider figure.label08 {
+  left: 68%;
+  top: 77%;
+}
+div.slider div.main-slider figure.label img {
   width: 100%;
 }
-div.slider figure.main-slider figure.label h2 {
+div.slider div.main-slider figure.label h2 {
   position: absolute;
   top: 15%;
   left: 25%;
@@ -139,10 +140,13 @@ div.slider figure.main-slider figure.label h2 {
   font-weight: bold;
   font-style: italic;
 }
-div.slider figure.main-slider img {
-  width: 33.333%;
+div.slider div.main-slider img {
+  width: 100%;
   height: auto;
   float: left;
+}
+.carousel-inner>.item {
+  overflow: hidden;
 }
 div.ubicacion {
   padding-top: 4em;
@@ -297,7 +301,7 @@ div#contact-message {
 smaller than 1349
 *************************************************************************************/
 @media screen and (max-width: 1349px) {
-  div.slider figure.main-slider figure.label h2 {
+  div.slider div.main-slider figure.label h2 {
     font-size: 26px;
   }
 }
@@ -305,7 +309,7 @@ smaller than 1349
 smaller than 1200
 *************************************************************************************/
 @media screen and (max-width: 1200px) {
-  div.slider figure.main-slider figure.label h2 {
+  div.slider div.main-slider figure.label h2 {
     top: 6%;
     left: 23%;
   }
@@ -314,7 +318,7 @@ smaller than 1200
 smaller than 1000
 *************************************************************************************/
 @media screen and (max-width: 1000px) {
-  div.slider figure.main-slider figure.label h2 {
+  div.slider div.main-slider figure.label h2 {
     top: 0%;
     left: 22%;
     font-size: 20px;
@@ -324,7 +328,7 @@ smaller than 1000
 smaller than 768
 *************************************************************************************/
 @media screen and (max-width: 768px) {
-  div.slider figure.main-slider figure.label h2 {
+  div.slider div.main-slider figure.label h2 {
     top: 28%;
     margin-top: 0;
     left: 20%;
@@ -335,10 +339,10 @@ smaller than 768
 smaller than 606
 *************************************************************************************/
 @media screen and (max-width: 606px) {
-  div.slider figure.main-slider figure.label h2 {
+  div.slider div.main-slider figure.label h2 {
     font-size: 11px;
   }
-  div.slider figure.main-slider figure.label {
+  div.slider div.main-slider figure.label {
     min-width: 60px;
   }
 }
